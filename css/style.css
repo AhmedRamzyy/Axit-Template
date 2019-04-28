@@ -150,6 +150,28 @@ body{
 .tabs .tab-switch li:hover{
     background-color: #ff8b38;
 }
+.tabs .tabs-content h4{
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.tabs .tabs-content p{
+    line-height: 1.6;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+.tabs .tabs-content button{
+    background-color: #ff8b38;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 30px;
+    outline: none;
+    font-size: 18px;
+}
+
+
+
+
 
 
 .uppercase{
