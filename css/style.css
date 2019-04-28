@@ -212,17 +212,118 @@ body{
     background-color: #f5f5f5;
 }
 
-
-
-
-.uppercase{
-    text-transform: uppercase;
+/* why this is awesome */
+.why-awsome {
+    padding: 60px 0;
 }
+.why-awsome h6{
+    font-weight: bold;
+    font-size: 50px;
+    font-family:  'Raleway', sans-serif;
+}
+.why-awsome .awesome-desc{
+    margin-bottom: 50px;
+    color: #b9b9b9;
+}
+.why-awsome i{
+    color: #ff8b38;
+    height: 70px;
+    width: 70px;
+    line-height: 65px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+}
+.why-awsome h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.why-awsome .featur-desc{
+    color: #b9b9b9;
+}
+
+/* price option */
+.price-plan {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+.price-plan h6{
+    font-size: 40px;
+}
+.price-plan .plan-desc{
+    margin-bottom: 50px;
+    color: #b9b9b9;
+}
+.price-plan .pric-box {
+    background-color: #fff;
+}
+.price-plan .pric-box h3{
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    margin: 0;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+.price-plan .pric-box .price-option{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0 20px;
+    border-bottom: 5px solid #ff8b38;
+}
+.price-plan  .price{
+    font-size: 70px;
+    display: block;
+    font-weight: bold;
+}
+.price-plan .price .usd{
+    font-size: 20px;
+}
+.price-plan .period{
+    color: #adadad;
+    font-style: italic;
+}
+.price-plan .pric-box .popular{
+    color: #fff;
+    padding: 5px 10px 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+    background-color: #ff8b38;
+}
+.price-plan .pric-box ul li{
+    padding: 10px;
+    border-bottom: .5px solid #f5f5f5;
+    color: #8c8c8c;
+}
+.price-plan .basic,
+.price-plan .enterprise{
+    margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* framework */
 .head-border::after{
     content: '';
     display: block;
     width: 65px;
     height: 3px;
     margin: 25px 0;
+    background-color: #ff8b38;
+}
+.head-border-center::after{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 20px auto;
     background-color: #ff8b38;
 }
