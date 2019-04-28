@@ -150,7 +150,10 @@ body{
 .tabs .tab-switch li:hover{
     background-color: #ff8b38;
 }
-.tabs .tabs-content h4{
+.tabs .tabs-content{
+    padding-left: 50px;
+}
+.tabs .tabs-content .tab1 h4{
     margin-top: 0;
     font-weight: bold;
     margin-bottom: 20px;
@@ -169,11 +172,57 @@ body{
     font-size: 18px;
 }
 
+/* sublist section */
+.sublist{
+    padding: 80px 0;
+}
+.sublist .sublist-head{
+    font-weight: bold;
+    font-size: 22px;
+}
+.sublist .sublist-desc{
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.sublist .list-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sublist .list-icon .icon-desc{
+    width: calc(100% - 70px);
+}
+.sublist .list-icon .icon-desc h6{
+    font-weight: bold;
+    font-size: 18px;
+}
+.sublist .list-icon i {
+    height: 40px;
+    width: 40px;
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
 
+/* standard picture section */
+.standard-pic{
+    background-color: #f5f5f5;
+}
 
 
 
 
 .uppercase{
     text-transform: uppercase;
+}
+.head-border::after{
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 25px 0;
+    background-color: #ff8b38;
 }
