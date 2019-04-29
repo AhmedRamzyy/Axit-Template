@@ -217,8 +217,8 @@ body{
     padding: 60px 0;
 }
 .why-awsome h6{
-    font-weight: bold;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 40px;
     font-family:  'Raleway', sans-serif;
 }
 .why-awsome .awesome-desc{
@@ -274,7 +274,8 @@ body{
 .price-plan  .price{
     font-size: 70px;
     display: block;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Raleway' ,sans-serif;
 }
 .price-plan .price .usd{
     font-size: 20px;
@@ -299,7 +300,24 @@ body{
 .price-plan .enterprise{
     margin-top: 35px;
 }
-
+.what-says {
+    padding: 60px 0;
+}
+.what-says h6{
+    font-weight: 500;
+    font-size: 40px;
+    font-family:  'Raleway', sans-serif;
+}
+.what-says .awesome-desc{
+    margin-bottom: 50px;
+    color: #b9b9b9;
+}
+.what-says .customer-info {
+    background-color: #f5f5f5;
+    padding: 25px 15px;
+    color: #abaaaa;
+    border-radius: 10px;
+}
 
 
 
