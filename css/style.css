@@ -358,6 +358,7 @@ body{
 }
 .stylish p{
     color: #abaaaa;
+    margin-bottom: 50px;
 }
 .stylish button{
     background: transparent;
@@ -367,10 +368,52 @@ body{
     font-size: 20px;
     outline: none;
     display: block;
-    margin: 30px auto;
+    margin: auto;
 }
 .stylish .head-border-center::after {
     background-color: #ffffff;
+}
+/* contact us */
+.contact-us{
+    padding: 50px 0;
+}
+.contact-us h6{
+    font-size: 40px;
+    margin: 0;
+    font-family:  'Raleway', sans-serif;
+}
+.contact-us p{
+    color: #abaaaa;
+    margin-bottom: 50px;
+}
+.contact-us form input[type="text"],
+.contact-us form input[type="email"]
+{
+    margin-bottom: 20px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ccc;
+}
+.contact-us form textarea{
+    height: 178px;
+    resize: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.contact-us form input[type="submit"]{
+    background-color: #ff8b38;
+    color: #fff;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
 }
 
 
