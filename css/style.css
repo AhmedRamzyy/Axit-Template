@@ -1,6 +1,5 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    height: 10000px;
 }
 
 
@@ -109,27 +108,7 @@ body{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.social .fa-facebook:hover{
-    color: #3b5998 ;
-}
-.social .fa-twitter:hover{
-    color: #1da1f2 ;
-}
-.social .fa-google-plus:hover{
-    color: #dd4b39 ;
-}
-.social .fa-pinterest:hover{
-    color: #bd081c ;
-}
-.social .fa-instagram:hover{
-    color: #e1306c ;
-}
-.social .fa-stumbleupon:hover{
-    color: #eb4924 ;
-}
-.social .fa-rss:hover{
-    color: #f26522;
-}
+
 /* tabs section */
 .tabs{
     padding: 90px 0;
@@ -395,6 +374,13 @@ body{
     box-shadow: none;
     border-bottom: 1px solid #ccc;
 }
+.contact-us form input[type="text"]:focus,
+.contact-us form input[type="email"]:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
 .contact-us form textarea{
     height: 178px;
     resize: none;
@@ -415,8 +401,71 @@ body{
     display: block;
     margin: auto;
 }
+footer{
+    padding: 20px 0;
+    background-color: #000;
+}
+footer ul li{
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+footer ul li a {
+    color: inherit;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.social .fa-facebook:hover,
+.social .fa-facebook:focus,
+footer .fa-facebook:hover,
+footer .fa-facebook:focus{
+    color: #3b5998 ;
+}
+.social .fa-twitter:hover,
+.social .fa-twitter:focus,
+footer .fa-twitter:hover,
+footer .fa-twitter:focus{
+    color: #1da1f2 ;
+}
+.social .fa-google-plus:hover,
+.social .fa-google-plus:focus,
+footer .fa-google-plus:hover,
+footer .fa-google-plus:focus{
+    color: #dd4b39 ;
+}
+.social .fa-pinterest:hover,
+.social .fa-pinterest:focus,
+footer .fa-pinterest:hover,
+footer .fa-pinterest:focus{
+    color: #bd081c ;
+}
+.social .fa-instagram:hover,
+.social .fa-instagram:focus,
+footer .fa-instagram:hover,
+footer .fa-instagram:focus{
+    color: #e1306c ;
+}
+.social .fa-stumbleupon:hover,
+.social .fa-stumbleupon:focus,
+footer .fa-stumbleupon:hover,
+footer .fa-stumbleupon:focus{
+    color: #eb4924 ;
+}
 
-
+.social .fa-rss:hover,
+.social .fa-rss:focus,
+footer .fa-rss:hover,
+footer .fa-rss:focus{
+    color: #f26522;
+}
+footer p {
+    color: #ccc;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
 
 
 /* framework */
