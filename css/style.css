@@ -6,7 +6,7 @@ body{
 
 /* header */
 .header{
-    height: 100vh;
+    height: auto;
     background: url(../images/header.jpg) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -17,11 +17,9 @@ body{
 }
 .header .overlay{
     padding-top: 130px;
-    position: absolute;
+    padding-bottom: 50px;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
     background-color: rgba(0, 0, 0, .5);
 }
 .header h1{
@@ -47,6 +45,7 @@ body{
 .header p:nth-child(3){
     font-family: 'Raleway', sans-serif;
     line-height: 2;
+    color: #ccc;
 }
 .header button{
     background: transparent;
@@ -338,10 +337,41 @@ body{
     font-weight: bold;
     margin-top: 15px;
 }
-
-
-
-
+/* stylish section */
+.stylish{
+    background-image: url(../images/stylebg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.stylish .overlay{
+    padding: 40px 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
+.stylish h6{
+    font-size: 40px;
+    margin: 0;
+    font-family:  'Raleway', sans-serif;
+}
+.stylish p{
+    color: #abaaaa;
+}
+.stylish button{
+    background: transparent;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    outline: none;
+    display: block;
+    margin: 30px auto;
+}
+.stylish .head-border-center::after {
+    background-color: #ffffff;
+}
 
 
 
