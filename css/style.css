@@ -1,24 +1,73 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body{font-family: 'Open Sans', sans-serif;}
+/* framework */
+
+/* buutons  */
+.btn-white{ /*transparent button */
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    outline: none;
+}
+.btn-white:hover{  /*transparent button hover */
+    background: rgba(255, 255, 255, .3);
+}
+.btn-yellow{ /* yellow button*/
+    font-size: 18px;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #ff8b38 !important;
+    color: #fff;
+    margin-top: 30px;
+    outline: none;
+}
+.btn-yellow:hover { /* yellow button hover*/
+    background-color: rgba(255, 139, 56, 0.7) !important;
+    color: #fff;
 }
 
+.head-border::after{ /* head bottom border */
+    content: '';
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 25px 0;
+    background-color: #ff8b38;
+}
+.contact-us .head-border:after, .stylish .head-border:after,
+.what-says .head-border:after, .why-awsome .head-border:after, /* centering head bottom border */
+.price-plan .head-border:after{margin: 25px auto;}
 
-/* header */
-.header{
-    height: auto;
-    background: url(../images/header.jpg) no-repeat top center;
+.header , .stylish {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.btn-white,.btn-yellow,.social ul li i,.tabs .tab-switch li ,footer ul li i,.why-awsome .feature,.price-plan .pric-box {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.why-awsome .feature:hover,
+.price-plan .pric-box:hover{box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+.tabs, .sublist, .why-awsome , .price-plan, .what-says , .contact-us, .overlay {padding: 80px 0;}
+
+/* header */
+.header{
+    background: url(../images/header.jpg) no-repeat center center;
     position: relative;
     color: #fff;
 }
 .header .overlay{
     padding-top: 130px;
     padding-bottom: 50px;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, .5);
 }
 .header h1{
@@ -34,25 +83,12 @@ body{
     font-size: 30px;
 }
 .header h1 ~ .lead::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 70px;
     background-color: #fff;
-    margin: 25px 0;
 }
 .header p:nth-child(3){
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     color: #ccc;
-}
-.header button{
-    background: transparent;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    margin-top: 20px;
-    font-size: 20px;
-    outline: none;
 }
 .header form{
     width: 360px;
@@ -63,7 +99,7 @@ body{
 .header form h2{
     background-color: #f5f5f5;
     color: #333;
-    padding: 10px;
+    padding: 15px 25px;
     font-size: 18px;
     margin-top: 0;
     font-weight: bold;
@@ -80,8 +116,7 @@ body{
     border-bottom: 1px solid #ccc;
 }
 .header form input[type="submit"]{
-    background-color: #ff8b38;
-    padding: 15px;
+    border-radius: 0;
 }
 
 /* social media */
@@ -99,32 +134,30 @@ body{
 .social p{
     color: #929292;
 }
-.social i {
-    color: #ccc;
-    margin: 40px 15px;
-    cursor: pointer;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+.social ul li{
+    color: #929292;
+    margin-top: 30px;
+    display: inline-block;
 }
-
+.social ul li a {
+    color: inherit;
+    margin-left: 50px;
+}
 /* tabs section */
-.tabs{
-    padding: 90px 0;
-    background-color: #f5f5f5;
-}
+.tabs { background-color: #f5f5f5;}
 .tabs .tab-switch li{
-    background-color: #333;
-    color: #fff;
     border-bottom: 1px solid #fff;
-    height: 110px;
+    background-color: #333;
     font-size: 20px;
+    color: #fff;
+    padding: 0;
+    margin-top: 0;
+    border-radius: 10px;
+    height: 110px;
     line-height: 110px;
     text-align: center;
     cursor: pointer;
 }
-.tabs .tab-switch li.selected,
 .tabs .tab-switch li:hover{
     background-color: #ff8b38;
 }
@@ -141,19 +174,8 @@ body{
     font-size: 18px;
     color: #5e5e5e;
 }
-.tabs .tabs-content button{
-    background-color: #ff8b38;
-    color: #fff;
-    padding: 10px 30px;
-    margin-top: 30px;
-    outline: none;
-    font-size: 18px;
-}
 
 /* sublist section */
-.sublist{
-    padding: 80px 0;
-}
 .sublist .sublist-head{
     font-weight: bold;
     font-size: 22px;
@@ -191,9 +213,6 @@ body{
 }
 
 /* why this is awesome */
-.why-awsome {
-    padding: 60px 0;
-}
 .why-awsome h6{
     font-weight: 500;
     font-size: 40px;
@@ -223,7 +242,6 @@ body{
 /* price option */
 .price-plan {
     background-color: #f5f5f5;
-    padding: 60px 0;
 }
 .price-plan h6{
     font-size: 40px;
@@ -280,9 +298,6 @@ body{
 }
 
 /* Testemonials */
-.what-says {
-    padding: 60px 0;
-}
 .what-says h6{
     font-weight: 500;
     font-size: 40px;
@@ -319,10 +334,6 @@ body{
 /* stylish section */
 .stylish{
     background-image: url(../images/stylebg.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-position: center;
 }
 .stylish .overlay{
@@ -340,22 +351,13 @@ body{
     margin-bottom: 50px;
 }
 .stylish button{
-    background: transparent;
-    padding: 10px 30px;
-    border: 2px solid #fff;
-    margin-top: 20px;
-    font-size: 20px;
-    outline: none;
     display: block;
     margin: auto;
 }
-.stylish .head-border-center::after {
+.stylish .head-border:after {
     background-color: #ffffff;
 }
 /* contact us */
-.contact-us{
-    padding: 50px 0;
-}
 .contact-us h6{
     font-size: 40px;
     margin: 0;
@@ -390,98 +392,33 @@ body{
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
-.contact-us form input[type="submit"]{
-    background-color: #ff8b38;
-    color: #fff;
-    padding: 10px 30px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    display: block;
-    margin: auto;
-}
-footer{
-    padding: 20px 0;
-    background-color: #000;
-}
-footer ul li{
-    color: #fff;
-    display: inline-block;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-footer ul li a {
-    color: inherit;
-    font-size: 30px;
-    margin-right: 10px;
-}
-.social .fa-facebook:hover,
-.social .fa-facebook:focus,
-footer .fa-facebook:hover,
-footer .fa-facebook:focus{
-    color: #3b5998 ;
-}
-.social .fa-twitter:hover,
-.social .fa-twitter:focus,
-footer .fa-twitter:hover,
-footer .fa-twitter:focus{
-    color: #1da1f2 ;
-}
-.social .fa-google-plus:hover,
-.social .fa-google-plus:focus,
-footer .fa-google-plus:hover,
-footer .fa-google-plus:focus{
-    color: #dd4b39 ;
-}
-.social .fa-pinterest:hover,
-.social .fa-pinterest:focus,
-footer .fa-pinterest:hover,
-footer .fa-pinterest:focus{
-    color: #bd081c ;
-}
-.social .fa-instagram:hover,
-.social .fa-instagram:focus,
-footer .fa-instagram:hover,
-footer .fa-instagram:focus{
-    color: #e1306c ;
-}
-.social .fa-stumbleupon:hover,
-.social .fa-stumbleupon:focus,
-footer .fa-stumbleupon:hover,
-footer .fa-stumbleupon:focus{
-    color: #eb4924 ;
-}
+.contact-us form input[type="submit"]{display: block;margin: auto;}
 
-.social .fa-rss:hover,
-.social .fa-rss:focus,
-footer .fa-rss:hover,
-footer .fa-rss:focus{
-    color: #f26522;
-}
-footer p {
-    color: #ccc;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-}
+footer{padding: 20px 0;background-color: #000;}
 
+footer ul li{color: #fff;display: inline-block;}
 
-/* framework */
-.head-border::after{
-    content: '';
-    display: block;
-    width: 65px;
-    height: 3px;
-    margin: 25px 0;
-    background-color: #ff8b38;
-}
-.head-border-center::after{
-    content: '';
-    display: block;
-    width: 65px;
-    height: 3px;
-    margin: 20px auto;
-    background-color: #ff8b38;
-}
+footer ul li a {color: inherit;font-size: 30px;margin-right: 10px;}
+
+.social .fa-facebook:hover,footer .fa-facebook:hover,
+.social .fa-facebook:focus,footer .fa-facebook:focus { color: #3b5998;}
+
+.social .fa-twitter:hover,footer .fa-twitter:hover,
+.social .fa-twitter:focus,footer .fa-twitter:focus { color: #1da1f2;}
+
+.social .fa-google-plus:hover,footer .fa-google-plus:hover,
+.social .fa-google-plus:focus,footer .fa-google-plus:focus{ color: #dd4b39;}
+
+.social .fa-pinterest:hover,footer .fa-pinterest:hover,
+.social .fa-pinterest:focus,footer .fa-pinterest:focus{ color: #bd081c;}
+
+.social .fa-instagram:hover,footer .fa-instagram:hover,
+.social .fa-instagram:focus,footer .fa-instagram:focus{ color: #e1306c;}
+
+.social .fa-stumbleupon:hover,footer .fa-stumbleupon:hover,
+.social .fa-stumbleupon:focus,footer .fa-stumbleupon:focus{ color: #eb4924;}
+
+.social .fa-rss:hover,footer .fa-rss:hover,
+.social .fa-rss:focus,footer .fa-rss:focus{ color: #f26522;}
+
+footer p {color: #ccc; margin: 0; font-family: 'Raleway', sans-serif;}
