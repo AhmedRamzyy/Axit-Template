@@ -18,10 +18,10 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .header form{width: 360px;background-color: #fff;border-radius: 5px;overflow: hidden;}
 
-.header form h2{background-color: #f5f5f5;color: #333;padding: 15px 25px;font-size: 18px;margin-top: 0;font-weight: bold;}
+.header form p{background-color: #f5f5f5;color: #333;padding: 15px 25px;font-size: 18px;margin-top: 0;font-weight: bold;}
 
-.header form h2 span,
-.navbar span{color: #ff8b38;}
+.header form p span,
+.navbar span {color: #ff8b38;}
 
 .header form .form-control{width: 80%;margin:40px auto;border-radius: 0;border: none;box-shadow: none;border-bottom: 1px solid #ccc;}
 
@@ -47,7 +47,7 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .tabs .tabs-content{padding-left: 50px;}
 
-.tabs .tabs-content .tab1 h4{margin-top: 0;font-weight: bold;margin-bottom: 20px;}
+.tabs .tabs-content .tab1 h2{margin-top: 0;font-size: 25px;font-weight: bold;margin-bottom: 20px;}
 
 .tabs .tabs-content p{line-height: 1.6;font-size: 18px;}
 
@@ -60,23 +60,20 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .sublist .list-icon .icon-desc{width: calc(100% - 70px);}
 
-.sublist .list-icon .icon-desc h6{font-weight: bold;font-size: 18px;}
+.sublist .list-icon .icon-desc h4{font-weight: bold;font-size: 18px;}
 
 .sublist .list-icon i{height: 40px;width: 40px;color: #ff8b38;border: 2px solid #ff8b38;border-radius: 50%;line-height: 40px;text-align: center;}
 
 /* standard picture section */
 .standard-pic{background-color: #f5f5f5;}
-
 /* why this is awesome */
-.why-awsome h6{font-weight: 500;font-size: 40px;font-family:  'Raleway', sans-serif;}
+.why-awsome h5{font-weight: 500;font-size: 40px;font-family:  'Raleway', sans-serif;}
 
 .why-awsome .awesome-desc{margin-bottom: 50px;}
 
 .why-awsome i{color: #ff8b38;height: 70px;width: 70px;line-height: 65px;border: 2px solid #ff8b38;border-radius: 50%;}
 
-.why-awsome h3{font-weight: bold;margin-bottom: 20px;margin-top: 20px;}
-
-.why-awsome .featur-desc{color: #b9b9b9;}
+.why-awsome h6{font-size: 25px;font-weight: bold;margin-bottom: 20px;margin-top: 20px;}
 
 /* price option */
 .price-plan {background-color: #f5f5f5;}
@@ -87,7 +84,7 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .price-plan .pric-box {background-color: #fff;}
 
-.price-plan .pric-box h3{background-color: #333;color: #fff;padding: 15px 0;margin: 0;font-weight: bold;border-bottom: 1px solid #fff;}
+.price-plan .pric-box p{background-color: #333;color: #fff;padding: 15px 0;margin: 0;font-weight: bold;border-bottom: 1px solid #fff;font-size: 24px;}
 
 .price-plan .pric-box .price-option{background-color: #333;color: #fff;padding: 10px 0 20px;border-bottom: 5px solid #ff8b38;}
 
@@ -102,7 +99,7 @@ body{font-family: 'Open Sans', sans-serif;}
 .price-plan .pric-box ul li{padding: 10px;border-bottom: .5px solid #f5f5f5;}
 
 .price-plan .basic,
-.price-plan .enterprise{margin-top: 35px;}
+.price-plan .enterprise{margin-top: 48px;}
 
 /* Testemonials */
 .what-says h6{font-weight: 500;font-size: 40px;font-family:  'Raleway', sans-serif;}
@@ -123,7 +120,7 @@ body{font-family: 'Open Sans', sans-serif;}
     left: 25px;
     bottom: -30px;
 }
-.what-says .client-head{font-weight: bold;margin-top: 15px;}
+.what-says .client-head{font-size: 24px;font-weight: bold;margin-top: 15px;}
 
 /* stylish section */
 .stylish{background-image: url(../images/stylebg.jpg);background-position: center;}
@@ -186,7 +183,7 @@ footer .fa-rss:focus{ color: #f26522;}
 
 footer p { margin: 0; font-family: 'Raleway', sans-serif;}
 /* framework */
-p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textarea::placeholder{color: #ccc;}
+p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textarea::placeholder{color: #8a8a8a;}
 
 /* buutons  */
 .btn-white{ /*transparent button */
@@ -224,7 +221,7 @@ p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textare
     -o-background-size: cover;
     background-size: cover;
 }
-.btn-white,.btn-yellow,.tabs .tab-switch li ,footer ul li i,.why-awsome .feature,.price-plan .pric-box {
+.navbar-inverse .navbar-nav>li>a , .btn-white, .btn-yellow , .tabs .tab-switch li , footer ul li i ,.why-awsome .feature ,.price-plan .pric-box{
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
