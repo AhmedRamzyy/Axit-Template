@@ -73,7 +73,7 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .why-awsome i{color: #ff8b38;height: 70px;width: 70px;line-height: 65px;border: 2px solid #ff8b38;border-radius: 50%;}
 
-.why-awsome h6{font-size: 25px;font-weight: bold;margin-bottom: 20px;margin-top: 20px;}
+.why-awsome h6{font-size: 20px;font-weight: bold;margin-bottom: 20px;margin-top: 20px;}
 
 /* price option */
 .price-plan {background-color: #f5f5f5;}
@@ -252,11 +252,10 @@ p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textare
     .tabs .tab-switch li { width: 33.333333%; float: left;}
 }
 @media (max-width: 991px){
-    .tabs .tabs-content { padding-left: 0;
-}
+    .tabs .tabs-content { padding-left: 0;}
 }
 @media (max-width: 991px){
-    .tabs .tabs-content .tab1 h4{margin-top: 130px;}
+    .tabs .tabs-content .tab1 h2{margin-top: 130px; font-size: 20px;}
 }
 @media (max-width: 991px){
     .tabs .tabs-content .btn-yellow,.why-awsome .feature,
@@ -270,7 +269,7 @@ p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textare
 }
 @media (max-width: 991px){
     .header h1 ~ .lead,.contact-us h6,.stylish h6,
-    .what-says h6,.price-plan h6,.why-awsome h6 {font-size: 25px; }
+    .what-says h6,.price-plan h6,.why-awsome h5 {font-size: 25px; }
 }
 @media (max-width: 991px){
     footer ul li a {font-size: 20px;}
