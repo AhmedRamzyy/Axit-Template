@@ -130,7 +130,7 @@ body{font-family: 'Open Sans', sans-serif;}
 
 .stylish h6{font-size: 40px;margin: 0;font-family:  'Raleway', sans-serif;}
 
-.stylish p{margin-bottom: 50px;}
+.stylish p{margin-bottom: 50px;color: #fff;}
 .stylish button{display: block;margin: auto;}
 
 .stylish .head-border:after {background-color: #ffffff;}
@@ -177,7 +177,7 @@ footer .fa-rss:focus{ color: #f26522;}
 
 footer p { margin: 0; font-family: 'Raleway', sans-serif;}
 /* framework */
-p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textarea::placeholder{color: #8a8a8a;}
+p , .price-plan .period, .price-plan .pric-box ul li,input::placeholder , textarea::placeholder{color: #8a8a8a;}
 
 .contact-us form input[type="text"]:focus,
 .contact-us form input[type="email"]:focus,.header form .form-control:focus{
@@ -216,8 +216,8 @@ p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textare
     outline: none;
 }
 .btn-white:hover { background: rgba(255, 255, 255, .3);}
-
-.btn-yellow{ /* yellow button*/
+/* yellow button*/
+.btn-yellow{
     font-size: 18px;
     border: none;
     padding: 15px 25px;
@@ -234,43 +234,30 @@ p ,.price-plan .period, .price-plan .pric-box ul li,input::placeholder , textare
 /*----------------------------------- media -----------------------------------  */
 @media (max-width: 991px){
     .padd-top-bott { padding: 40px 0; }
-}
-@media (max-width: 991px){
+
     .txt-center-xs { text-align: center; }
-}
-@media (max-width: 991px){
+
     .header h1 ~ .lead::after,
     .sublist .head-border::after { margin: 25px auto; display: block;}
-}
-@media (max-width: 991px){
+
     .tabs .tab-switch li{ border-right: 1px solid #fff;}
-}
-@media (max-width: 991px){
+
     .header form{width: 100%;}
-}
-@media (max-width: 991px){
     .tabs .tab-switch li { width: 33.333333%; float: left;}
-}
-@media (max-width: 991px){
+
     .tabs .tabs-content { padding-left: 0;}
-}
-@media (max-width: 991px){
+
     .tabs .tabs-content .tab1 h2{margin-top: 130px; font-size: 20px;}
-}
-@media (max-width: 991px){
+
     .tabs .tabs-content .btn-yellow,.why-awsome .feature,
     .what-says .media,.btn-white { margin-bottom: 20px;}
-}
-@media (max-width: 991px){
+
     .sublist .list-icon .icon{width: 100%}
-}
-@media (max-width: 991px){
+
     .sublist .list-icon .icon-desc{width: 100%}
-}
-@media (max-width: 991px){
+
     .header h1 ~ .lead,.contact-us h6,.stylish h6,
     .what-says h6,.price-plan h6,.why-awsome h5 {font-size: 25px; }
-}
-@media (max-width: 991px){
+    
     footer ul li a {font-size: 20px;}
 }
