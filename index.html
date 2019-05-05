@@ -124,7 +124,8 @@
                             </div>
                             <div class="icon-desc">
                                 <h4>Download</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia qui iure debitis id.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia qui iure debitis id.
+                                </p>
                             </div>
                         </div>
                         <div class="list-icon">
@@ -144,7 +145,7 @@
     </div>
 
     <!-- standard picture section -->
-    <div  class="sublist standard-pic txt-center-xs">
+    <div class="sublist standard-pic txt-center-xs">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -288,11 +289,13 @@
     <div id="testmonials" class="what-says padd-top-bott">
         <div class="container">
             <h6 class="head-border text-uppercase text-center">What Our Customer Saying</h6>
-            <p class="awesome-desc  txt-center-xs text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="awesome-desc  txt-center-xs text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
             <div class="row">
 
                 <div class="col-md-4">
-                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores
                         repudiandae delectus ducimus
                         quidem esse deleniti Asperiores repudiandae delectus ducimus quidem esse deleniti</p>
                     <div class="media">
@@ -307,7 +310,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores
                         repudiandae delectus ducimus
                         quidem esse deleniti Asperiores repudiandae delectus ducimus quidem esse deleniti</p>
                     <div class="media">
@@ -322,7 +326,8 @@
                 </div>
 
                 <div class="col-md-4">
-                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                    <p class="customer-info  txt-center-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores
                         repudiandae delectus ducimus
                         quidem esse deleniti Asperiores repudiandae delectus ducimus quidem esse deleniti</p>
                     <div class="media">
@@ -395,7 +400,32 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- our js file -->
-    <script src="js/main.js" type="text/javacsript"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
 
 </html>
