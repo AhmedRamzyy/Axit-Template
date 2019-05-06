@@ -176,6 +176,23 @@ footer .fa-rss:hover,
 footer .fa-rss:focus{ color: #f26522;}
 
 footer p { margin: 0; font-family: 'Raleway', sans-serif;}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+}
+#return-to-top i {color: #fff;margin: 0;position: relative;left: 16px;top: 13px;font-size: 19px;}
+
+#return-to-top:hover {background: rgba(0, 0, 0, 0.9);}
+
+#return-to-top:hover i {color: #fff;top: 5px;}
 /* framework */
 p , .price-plan .period, .price-plan .pric-box ul li,input::placeholder , textarea::placeholder{color: #8a8a8a;}
 
@@ -195,7 +212,8 @@ p , .price-plan .period, .price-plan .pric-box ul li,input::placeholder , textar
     -o-background-size: cover;
     background-size: cover;
 }
-.navbar-inverse .navbar-nav>li>a , .btn-white, .btn-yellow , .tabs .tab-switch li , footer ul li i ,.why-awsome .feature ,.price-plan .pric-box{
+.navbar-inverse .navbar-nav>li>a , .btn-white, .btn-yellow , .tabs .tab-switch li , footer ul li i ,.why-awsome .feature ,.price-plan .pric-box,
+#return-to-top i,#return-to-top {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;

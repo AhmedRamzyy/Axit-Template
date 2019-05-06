@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--  minified font awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- main style -->
@@ -393,6 +394,7 @@
         </ul>
         <p>All Copyright&copy; Reserved To Ahmed Ramzy</p>
     </footer>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
     <!-- minified Jquery -->
@@ -423,6 +425,18 @@
                         window.location.hash = hash;
                     });
                 } // End if
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 500) { // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200); // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200); // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function () { // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0 // Scroll to top of body
+                }, 500);
             });
         });
     </script>
